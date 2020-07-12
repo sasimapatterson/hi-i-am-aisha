@@ -20,8 +20,7 @@ html {
 .wrapper {
     margin: 0 auto;
     width: 90%;
-    height: auto;  
-    overflow: auto;    
+    height: auto;     
 }
 
 /*--------- Header --------*/
@@ -64,7 +63,8 @@ h1 {
     margin-bottom: 10px;  
     line-height: 30px;
     padding-top: 30px;
-    padding-bottom: 30px;    
+    padding-bottom: 30px;  
+    flex-wrap: wrap; 
 }
 
 .content p {
@@ -72,19 +72,21 @@ h1 {
 }
 
 .content-left {
-    padding-right: 40px;
+    text-align: justify;
     box-sizing: border-box;
-    border-right: 0.3px solid white;         
+    border-bottom: 0.3px solid white;
+    width: 100%;       
 }
 
 .content-mdl {
-    padding-left: 40px;
-    padding-right: 40px;       
+    text-align: justify;
+    width: 100%;     
 }
 
 .content-right {
-    padding-left: 40px;
-    border-left: 0.3px solid white;   
+    text-align: justify;
+    border-top: 0.3px solid white; 
+    width: 100%; 
 }
 
 /*---------- Footer ----------*/
@@ -109,15 +111,38 @@ h1 {
 
 .footer ul li {
     justify-content: space-between;
-    width: 6em;
-    
+    width: 6em;    
 }
 
 /*--------- This is not working?? ---------*/
 
-@media(min-width: 768px)  { 
+@media all and (min-width: 1200px)  { 
     .content {
-        flex-basis: 30%;
-        flex-direction: row;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .content-left {
+        padding-right: 40px;
+        padding-left: 40px;  
+    }
+
+    .content-mdl {
+        padding-left: 40px;
+        padding-right: 40px; 
+    }  
+
+    .content-right {
+        padding-left: 40px;
+        border-top: 0.3px solid white;     
     }
 }
+
+
+
+
+    
+        
+         
