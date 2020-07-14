@@ -59,8 +59,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;  
-    margin-bottom: 10px;  
+    margin-top: 5px;  
+    margin-bottom: 5px;  
     line-height: 30px;
     padding-top: 30px;
     padding-bottom: 30px;  
@@ -83,13 +83,14 @@ h1 {
     width: 100%;  
     padding-top: 3px;
     padding-bottom: 5px;
-      
+    box-sizing: border-box;  
 }
 
 .content-right {
     text-align: justify; 
     width: 100%; 
-    border-top: 0.3px solid white;     
+    border-top: 0.3px solid white;  
+    box-sizing: border-box;  
 }
 
 
@@ -125,39 +126,28 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;  
-        text-align: unset;   
+        justify-content: space-between;     
     }
 
     .content-left {
         border-right: 0.3px solid white;
         padding-right: 40px; 
-        width: 30%; 
-        border-bottom: none;
+        width: 32%; 
+        border-bottom: none;    
     }
 
     .content-mdl {
-        padding-left: 40px;
-        padding-right: 40px; 
-        width: 30%;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        width: 28%;
     }  
 
     .content-right {
         padding-left: 40px;  
-        width: 30%; 
+        width: 32%; 
         border-left: 0.3px solid white;  
         border-top: none;
-    }
+     }
 }
 
-@media all and (min-width: 768px) {
-    .content {
-       
-       
-        
-}
-    
-
-
-    
-        
-         
+@media all and (min-width: 768px) 
